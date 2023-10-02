@@ -1,0 +1,111 @@
+name: "\U0001F4E6 Package Request"
+description: If you want to add a new package.
+title: "[Package Request] Package Name"
+labels: ["enhancement"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: Name of the project
+      placeholder: Stable-Baselines3
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Short description, can be multiline
+      placeholder: PyTorch version of Stable Baselines, reliable implementations of reinforcement learning algorithms.
+    validations:
+    required: true
+
+  - type: input
+    id: repository_url
+    attributes:
+      label: Repository
+      description: Github repository
+      placeholder: https://github.com/DLR-RM/stable-baselines3
+    validations:
+      required: true
+
+  - type: input
+    id: homepage_url
+    attributes:
+      label: Homepage
+      description: Homepage or documentation URL
+      placeholder: https://stable-baselines3.readthedocs.io/en/master/
+    validations:
+      required: false
+
+  - type: input
+    id: video_url
+    attributes:
+      label: Video
+      description:  YouTube video URL, should respect the format "https://www.youtube.com/watch?v=VIDEO_ID"
+      placeholder: https://www.youtube.com/watch?v=f_FmDFrYkPM
+    validations:
+      required: false 
+
+  - type: input
+    id: paper_url
+    attributes:
+      label: Paper
+      description: URL to associated paper (or one of the associated paper)
+      placeholder: http://jmlr.org/papers/v22/20-1364.html
+    validations:
+      required: false 
+
+  - type: input
+    id: logo_url
+    attributes:
+      label: Logo
+      description: URL to logo image
+      placeholder: https://github.com/DLR-RM/stable-baselines3/raw/master/docs/_static/img/logo.png
+    validations:
+      required: false  
+
+  - type: input
+    id: pypi
+    attributes:
+      label: PyPi
+      description: Name of the python package published on PyPI (`pip install package_name`)
+      placeholder: stable-baselines3
+    validations:
+      required: false  
+
+  - type: input
+    id: keywords
+    attributes:
+      label: Keywords
+      description: Not used for now, a list of keywords, will be used for search/filter later
+      placeholder: reinforcement learning, pytorch, library
+    validations:
+      required: false  
+
+  - type: dropdown
+    id: categories
+    attributes:
+      label: The different categories that project belongs to
+      multiple: true
+      options:
+        - learning
+        - planning
+        - control
+        - vision
+        - ik
+    validations:
+      required: true
+
+  # - type: checkboxes
+  #   id: terms
+  #   attributes:
+  #     label: Checklist
+  #     description: The different categories that project belongs to
+  #     options:
+  #       - label: learning
+  #       - label: planning
+  #       - label: control
+  #       - label: vision
+  #       - label: ik

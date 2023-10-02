@@ -19,7 +19,7 @@ body:
       description: Short description, can be multiline
       placeholder: PyTorch version of Stable Baselines, reliable implementations of reinforcement learning algorithms.
     validations:
-    required: true
+      required: true
 
   - type: input
     id: repository_url

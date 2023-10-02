@@ -97,15 +97,3 @@ body:
         - ik
     validations:
       required: true
-
-  # - type: checkboxes
-  #   id: terms
-  #   attributes:
-  #     label: Checklist
-  #     description: The different categories that project belongs to
-  #     options:
-  #       - label: learning
-  #       - label: planning
-  #       - label: control
-  #       - label: vision
-  #       - label: ik
